@@ -1,6 +1,7 @@
 import click
 from blkpy.util import run_lsblk
 
+
 @click.command()
 @click.option('--verbose', '-v', is_flag=True)
 @click.argument('device')

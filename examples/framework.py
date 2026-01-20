@@ -10,6 +10,7 @@ def run_command(command):
     output = subprocess.check_output(cmd)
     return output
 
+
 def run_lsblk(device):
     """
     Runs lsblk command and produces JSON output:
@@ -19,7 +20,7 @@ def run_lsblk(device):
     "blockdevices": [
         {"name": "vda", "size": "59.6G", "type": "disk", "mountpoint": null,
             "children": [
-        {"name": "vda1", "size": "59.6G", "type": "part", "mountpoint": "/etc/hosts"}
+{"name": "vda1", "size": "59.6G", "type": "part", "mountpoint": "/etc/hosts"}
             ]
         }
     ]
